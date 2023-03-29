@@ -1,5 +1,5 @@
 ```
-Pkg: duologpy
+Pkg: dulogpy
 Purpose: Handle data retrived by the duolog bio-logging system (e.g. range and proximity data)
 Author: Dr. Jesus R. Hernández Montero
 Contact: jesus.hdezmontero@gmail.com
@@ -75,3 +75,26 @@ This is a basic function to store, into your working directory, DataFrames as .c
 * `df`: DataFrame to be saved as .csv
 * `name`: name of the file, do not include '.csv' e.g. 'my_file'
 * `index`: specify is the index should be saved as a column or kept as index. The default value is `True` saving the index as colum. Saving the index as column allows to use the output file in R.
+
+# Getting started
+The packages can be found on PyPI hence you can install it using `pip`
+
+## Installation
+```bash
+pip install dulogpy
+```
+
+## Usage
+Using function to load range and proxmity data.
+```python
+>>> from pydulog import mn_range_loader, mn_data_loader
+
+# For loading Range data from Donwload Station
+>>> mn_range_loader('data_file_path.csv', is_ds=True)
+
+# For loading Range data from Base Station
+>>> mn_range_loader('data_file_path.csv', is_ds=False)
+
+# For loading Proximity data from any Ground Node
+>>> mn_data_loader('data_file_path.csv')
+```
