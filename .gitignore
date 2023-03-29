@@ -6,3 +6,5 @@
 pyproject.toml
 __pycache__
 __init__.py
+dist/
+tests/
