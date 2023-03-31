@@ -80,12 +80,15 @@ This is a basic function to store, into your working directory, DataFrames as .c
 The packages can be found on PyPI hence you can install it using `pip`
 
 ## Installation
+
 ```bash
 pip install dulogpy
+
 ```
 
 ## Usage
 Using function to load range and proxmity data.
+
 ```python
 >>> from pydulog import mn_range_loader, mn_data_loader
 
@@ -97,6 +100,7 @@ Using function to load range and proxmity data.
 
 # For loading Proximity data from any Ground Node
 >>> mn_data_loader('data_file_path.csv')
+
 ```
 
 ## Contributions

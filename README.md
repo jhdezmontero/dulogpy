@@ -86,6 +86,7 @@ pip install dulogpy
 
 ## Usage
 Using function to load range and proxmity data.
+
 ```python
 >>> from pydulog import mn_range_loader, mn_data_loader
 
@@ -97,4 +98,5 @@ Using function to load range and proxmity data.
 
 # For loading Proximity data from any Ground Node
 >>> mn_data_loader('data_file_path.csv')
+
 ```
